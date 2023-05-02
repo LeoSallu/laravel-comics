@@ -1,0 +1,43 @@
+header {
+    #menu-top {
+        background-color: #2382f9;
+
+        ul {
+            li {
+                padding: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .container {
+        .menu {
+            ul {
+                li {
+                    padding: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            color: #2382f9;
+                            border-bottom: 5px solid #2382f9;
+                        }
+                    }
+
+                }
+            }
+        }
+        .searchbar{
+            p {
+                width: 150px;
+                border-bottom: 3px solid #2382f9 ;
+            }
+        }
+    }
+    
+}

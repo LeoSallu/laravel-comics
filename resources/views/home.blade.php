@@ -16,7 +16,7 @@
                     <div id="thumbs" class="card m-3" style="width: 18rem;">
                         <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $comic['title'] }}</h5>
+                            <h6 class="card-title">{{ $comic['title'] }}</h6>
                         </div>
                     </div>
                 @endforeach

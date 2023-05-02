@@ -1,0 +1,26 @@
+#menu{
+    background-color: #2382f9;
+    ul {
+        li {
+            img{
+                width: 50px;
+                height: fit-content;
+                
+            }
+            span {
+                font-size: 12px;
+                color: white;
+            }
+        }
+    }
+}
+#list-menu{
+    background-image:url("../img/footer-bg.jpg") ;
+    .container{
+        ul {
+            li{
+                color: white;
+            }
+        }    
+    }
+}

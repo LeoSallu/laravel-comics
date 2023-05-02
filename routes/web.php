@@ -34,6 +34,9 @@ Route::get('/prodotti', function () {
     $data = [
        'comics' => config('comics')
     ];
+    $list = [
+        'list' => config('list')
+     ];
 
-   return view('product', $data);
+   return view('product', $data, $list);
 })->name('product');

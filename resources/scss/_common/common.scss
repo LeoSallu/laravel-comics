@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+/*
+RESET  
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+COMMON
+*/
 body {
     font-family: 'Lato', sans-serif;
 }

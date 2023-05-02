@@ -1,0 +1,31 @@
+main {
+    #jumbotron {
+        height: 400px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: content;
+        }
+    }
+
+    .button {
+        color: white;
+        background-color: #2382f9;
+    }
+
+    background-color: #1c1c1c;
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+
+    .card {
+        padding: 15px;
+        width: calc(100% / 6);
+    }
+}

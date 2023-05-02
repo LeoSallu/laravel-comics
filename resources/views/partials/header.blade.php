@@ -30,7 +30,10 @@
                 <li><a href="#">SHOP</a></li>
             </ul>
             <div class="searchbar">
-                <p>cerca</p>
+                <p class="p-2 d-flex justify-content-end align-items-center">
+                    <span class="mx-2">Search</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </p>
             </div>
         </div>
     </div>

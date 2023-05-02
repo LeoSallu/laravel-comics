@@ -10,6 +10,7 @@
                             <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $comic['title'] }}</h5>
+                                <p class="card-text">{{ Str::limit($comic['description'], $limit = 100, $end = '...')}}</p>
                             </div>
                         </div>
                     @endforeach
