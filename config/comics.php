@@ -19,7 +19,7 @@ return [
             "Neal Adams",
             "Curt Swan",
             "John Cassaday",
-            "Olivier Coipel",
+            "Olivier Coipel", 
             "Jim Lee"
         ],
         "writers" => [

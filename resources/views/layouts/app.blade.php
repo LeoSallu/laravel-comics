@@ -15,6 +15,9 @@
             @yield('page.main')
         </main>
         <!-- /Main  -->
+        <!-- Nav -->
+        @include('partials.nav')
+        <!-- /Nav -->
         <!-- footer -->
         @include('partials.footer')
         <!-- /footer -->        
