@@ -16,8 +16,6 @@ header {
         background-color: #2382f9;
 
         ul {
-            list-style-type: none;
-
             li {
                 padding: 10px;
 
@@ -32,8 +30,6 @@ header {
     .container {
         .menu {
             ul {
-                list-style-type: none;
-
                 li {
                     padding: 10px;
 
@@ -54,39 +50,33 @@ header {
 }
 
 //MAIN
-#jumbotron {
-    height: 400px;
-    overflow: hidden;
+main {
+    #jumbotron {
+        height: 400px;
+        overflow: hidden;
 
-    img {
-        width: 100%;
-        display: block;
-        object-fit: content;
+        img {
+            width: 100%;
+            display: block;
+            object-fit: content;
+        }
     }
-}
 
-.background {
-    background-color: #1c1c1c;
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        color: white;
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
     .button {
         color: white;
         background-color: #2382f9;
     }
-}
-.thumbs {
-    display: flex;
-    flex-wrap: wrap;
 
-    .item {
+    background-color: #1c1c1c;
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+
+    .card {
         padding: 15px;
         width: calc(100% / 6);
     }
