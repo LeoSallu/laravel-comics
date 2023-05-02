@@ -21,7 +21,10 @@ Route::get('/', function () {
     $data = [
         'comics' => config('comics')
      ]; 
-    return view('home', $data);
+     $list = [
+        'list' => config('list')
+     ];
+    return view('home', $data, $list);
 })->name('home');
 
 // Route prodotti 
