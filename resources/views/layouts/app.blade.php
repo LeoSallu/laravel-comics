@@ -3,25 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel Comics</title>
+        <title>@yield('title')</title>
          @vite('resources/js/app.js')
     </head>
     <body>
         <!-- header -->
-        <header>
-            header
-        </header>
+        @include('partials.header')
         <!-- /header -->
         <!-- Main  -->
         <main>
-            main
             @yield('main')
         </main>
         <!-- /Main  -->
         <!-- footer -->
-        <footer>
-            footer 
-        </footer>
+        @include('partials.footer')
         <!-- /footer -->        
     </body>
 </html>

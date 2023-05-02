@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page.main')
+@section('main')
     <div class="container">
         <h1>ciao</h1>
     </div>
