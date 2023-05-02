@@ -1,24 +1,34 @@
 @import "~bootstrap/scss/bootstrap";
 @import "_common/common.scss";
 
+/*
+RESET  
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 // HEADER 
 header {
-        #menu-top {
-            background-color: #2382f9;
+    #menu-top {
+        background-color: #2382f9;
 
-            ul {
-                list-style-type: none;
+        ul {
+            list-style-type: none;
 
-                li {
-                    padding: 10px;
+            li {
+                padding: 10px;
 
-                    a {
-                        text-decoration: none;
-                        color: white;
-                    }
+                a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
+    }
+
     .container {
         .menu {
             ul {
@@ -30,13 +40,54 @@ header {
                     a {
                         text-decoration: none;
                         color: black;
+
+                        &:hover {
+                            color: #2382f9;
+                            border-bottom: 5px solid #2382f9;
+                        }
                     }
-                    a:hover{
-                        border-bottom: 5px solid #2382f9;
-                    }
+
                 }
             }
         }
     }
+}
 
+//MAIN
+#jumbotron {
+    height: 400px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+        object-fit: content;
+    }
+}
+
+.background {
+    background-color: #1c1c1c;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .button {
+        color: white;
+        background-color: #2382f9;
+    }
+}
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        padding: 15px;
+        width: calc(100% / 6);
+    }
 }

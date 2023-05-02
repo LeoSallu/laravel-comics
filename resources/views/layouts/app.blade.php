@@ -12,7 +12,7 @@
         <!-- /header -->
         <!-- Main  -->
         <main>
-            @yield('main')
+            @yield('page.main')
         </main>
         <!-- /Main  -->
         <!-- footer -->

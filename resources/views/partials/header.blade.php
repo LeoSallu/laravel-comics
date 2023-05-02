@@ -13,7 +13,7 @@
     <!-- /MENU TOP  -->
     <!-- MENU BOT  -->
     <div class="container">
-        <div class="menu d-flex justify-content-around align-items-center">
+        <div class="menu d-flex justify-content-around align-items-center p-3">
             <div class="logo">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo" srcset="">
             </div>
@@ -30,7 +30,7 @@
                 <li><a href="#">SHOP</a></li>
             </ul>
             <div class="searchbar">
-                cerca
+                <p>cerca</p>
             </div>
         </div>
     </div>

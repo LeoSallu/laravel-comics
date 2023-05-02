@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+// Route home 
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+// Route prodotti 
+
+Route::get('/prodotti', function () {
+
+    $data = [
+       'comics' => config('comics')
+    ];
+
+   return view('product', $data);
+})->name('product');
