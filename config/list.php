@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'dcComics' => [
+    'DC COMICS' => [
         [
             'linkName' => 'Character'
         ],
@@ -24,7 +24,7 @@ return [
             'linkName' => 'News'
         ]
     ],
-    'shop' => [
+    'SHOP' => [
         [
             'linkName' => 'Shop DC'
         ],
@@ -32,7 +32,7 @@ return [
             'linkName' => 'Shop DC Collectibles'
         ]
     ],
-    'dc' => [
+    'DC' => [
         [
             'linkName' => 'Terms of Use'
         ],
@@ -64,7 +64,7 @@ return [
             'linkName' => 'Contact us'
         ]
     ],
-    'sites' => [
+    'SITES' => [
         [
             'linkName' => 'DC'
         ],

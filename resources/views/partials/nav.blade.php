@@ -1,4 +1,4 @@
-<nav class="p-5">
+<nav id="menu" class="p-5">
     <div class="container">
         <ul class="d-flex justify-content-around align-items-center">
             <li class="d-flex align-items-center">
@@ -24,3 +24,19 @@
         </ul>    
     </div>
 </nav>
+<div id="list-menu">
+    <div class="container p-3">
+        <ul id="list-menu" class="d-flex p-3">
+            @foreach ($list as $array => $text)
+                <li class="mx-2 d-flex flex-column align-items-start">
+                    <h5 class="ms-4">{{ $array }}</h5>
+                    <ul>
+                        @foreach ($text as $item)
+                            <li>{{ $item['linkName'] }}</li>
+                        @endforeach
+                    </ul>    
+                </li>
+            @endforeach
+        </ul>    
+    </div>
+</div>

@@ -82,7 +82,7 @@ main {
     }
 }
 //NAV 
-nav{
+#menu{
     background-color: #2382f9;
     ul {
         li {
@@ -98,4 +98,20 @@ nav{
         }
     }
 }
+#list-menu{
+    background-image:url("../img/footer-bg.jpg") ;
+    .container{
+        ul {
+            li{
+                color: white;
+            }
+        }    
+    }
+}
 //FOOTER
+footer{
+    background-color: #1c1c1c;
+    #btn-footer{
+        border: 2px solid #2382f9;
+    }
+}
