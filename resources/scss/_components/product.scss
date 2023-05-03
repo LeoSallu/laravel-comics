@@ -1,0 +1,22 @@
+#comic-container{
+    position: relative;
+    #comic-info{
+        div{
+            color: white;
+        }
+        width: 200px;
+        height: fit-content;
+        position: absolute;
+        top: -100%;
+    }
+    
+}
+#light-bg{
+    background-color: white;
+}
+#bg-gray{
+    background-color: lightgray;
+}
+hr{
+    color: blackr;
+}

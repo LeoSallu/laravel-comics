@@ -18,25 +18,35 @@ use Illuminate\Support\Facades\Route;
 // Route home 
 
 Route::get('/', function () {
-    $data = [
-        'comics' => config('comics')
-     ]; 
-     $list = [
-        'list' => config('list')
-     ];
-    return view('home', $data, $list);
+   $list = [
+      'list' => config('list')
+   ];
+   return view('home', $list);
 })->name('home');
 
 // Route prodotti 
 
 Route::get('/prodotti', function () {
 
-    $data = [
-       'comics' => config('comics')
-    ];
-    $list = [
-        'list' => config('list')
-     ];
+   $data = [
+      'comics' => config('comics')
+   ];
+   $list = [
+      'list' => config('list')
+   ];
 
-   return view('product', $data, $list);
+   return view('products', $data, $list);
+})->name('products');
+
+// Route info prodotto
+
+Route::get('/info-fumetto/{index}', function ($index) {
+   $comics_total = config('comics');
+   $list = [
+      'list' => config('list')
+   ];
+
+   $comics = $comics_total[$index];
+
+   return view('product', $list, compact('comics'));
 })->name('product');

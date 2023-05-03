@@ -15,11 +15,11 @@
     <div class="container">
         <div class="menu d-flex justify-content-around align-items-center p-3">
             <div class="logo">
-                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo" srcset="">
+                <a href="/"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo" srcset=""></a>
             </div>
             <ul class="d-flex">
                 <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">COMICS</a></li>
+                <li><a href="/prodotti">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
                 <li><a href="#">GAMES</a></li>

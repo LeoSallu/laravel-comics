@@ -1,4 +1,5 @@
 <nav id="menu" class="p-5">
+    <!--Nav-->
     <div class="container">
         <ul class="d-flex justify-content-around align-items-center">
             <li class="d-flex align-items-center">
@@ -23,7 +24,9 @@
             </li>
         </ul>    
     </div>
+    <!--/Nav-->
 </nav>
+<!-- Link Menu -->
 <div id="list-menu">
     <div class="container p-3">
         <ul id="list-menu" class="d-flex p-3">
@@ -40,3 +43,5 @@
         </ul>    
     </div>
 </div>
+<!--/ Link Menu -->
+
