@@ -37,16 +37,27 @@
         <!--Credits-->
         <div id="bg-gray" class="d-flex p-4 justify-content-center">
             <div class="container d-flex">
-                <div class="w-75">
+                <div class="w-75 mx-2">
                     <h4>Talent</h4>
-                    <p>Art by <span class="text-primary">{{ implode(', ', $comics['artists']) }}</span></p>
-                    <p>Written by <span class="text-primary">{{ implode(', ', $comics['writers']) }}</span></p>
+                    <hr>
+                    <p>Art by: 
+                        <span class="text-primary mx-2">{{ implode(', ', $comics['artists']) }}</span>
+                    </p>
+                    <hr>
+                    <p>Written by: 
+                        <span class="text-primary mx-2">{{ implode(', ', $comics['writers']) }}</span>
+                    </p>
+                    <hr>
                 </div>
                 <div class="w-25">
                     <h4>Specs</h4>
-                    <p>Series:<span class="text-primary">{{ $comics['series'] }}</span></p>
-                    <p>U.S. Price: <span> {{ $comics['price'] }}</p>
-                    <p>On Sale Date: <span> {{ $comics['sale_date'] }}</p>
+                    <hr>
+                    <p>Series:<span class="text-primary mx-2">{{ $comics['series'] }}</span></p>
+                    <hr>
+                    <p>U.S. Price:<span class="mx-2">{{ $comics['price'] }}</p>
+                    <hr>
+                    <p>On Sale Date: <span class="mx-2"> {{ $comics['sale_date'] }}</p>
+                    <hr>
                 </div>
             </div>
         </div>
