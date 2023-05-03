@@ -7,7 +7,7 @@
                 <div class="d-flex flex-wrap justify-content-center">
                     @foreach ($comics as $comic)
                         <div id="thumbs" class="card m-3" style="width: 18rem;">
-                            <a href="{{ route('product', ['index' => $loop->index, 'count' => 10]) }}"><img src="{{ $comic['thumb'] }}" class="card-img-top" alt="..."></a>
+                            <a href="{{ route('product', ['index' => $loop->index]) }}"><img src="{{ $comic['thumb'] }}" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ $comic['title'] }}</h5>
                                 <p class="card-text">{{ Str::limit($comic['description'], $limit = 100, $end = '...')}}</p>

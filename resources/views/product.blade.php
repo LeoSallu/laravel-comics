@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('page.main')
-<!--Single Comic Info -->
+    <!--Single Comic Info -->
     <section id="light-bg" class="d-flex justify-content-center flex-column">
         <!-- Jumbotron -->
         <div id="jumbotron">
             <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="logo" srcset="">
-        </div>    
+        </div>
         <!-- /Jumbotron -->
         <div class="container d-flex">
             <!--Card-element-->
@@ -28,7 +28,7 @@
             </div>
             <!--/ Card-element-->
             <!--Adv-->
-            <div id="adv">
+            <div id="adv" class="d-flex flex-column align-items-end">
                 <h6>ADVERTISMENT</h6>
                 <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="adv" srcset="">
             </div>
@@ -36,21 +36,21 @@
         </div>
         <!--Credits-->
         <div id="bg-gray" class="d-flex p-4 justify-content-center">
-            <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h4>Talent</h4>
-                <hr>
-                <p>Art by <span class="text-primary">{{ implode(', ', $comics['artists']) }}</span></p>
-                <hr>
-                <p>Written by <span class="text-primary">{{ implode(', ', $comics['writers']) }}</span></p>
-            </div>
-            <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h4>Specs</h4>
-                <p>Series:<span class="text-primary">{{ $comics['series'] }}</span></p>
-                <p>U.S. Price: <span> {{ $comics['price'] }}</p>
-                <p>On Sale Date: <span> {{ $comics['sale_date'] }}</p>
+            <div class="container d-flex">
+                <div class="w-75">
+                    <h4>Talent</h4>
+                    <p>Art by <span class="text-primary">{{ implode(', ', $comics['artists']) }}</span></p>
+                    <p>Written by <span class="text-primary">{{ implode(', ', $comics['writers']) }}</span></p>
+                </div>
+                <div class="w-25">
+                    <h4>Specs</h4>
+                    <p>Series:<span class="text-primary">{{ $comics['series'] }}</span></p>
+                    <p>U.S. Price: <span> {{ $comics['price'] }}</p>
+                    <p>On Sale Date: <span> {{ $comics['sale_date'] }}</p>
+                </div>
             </div>
         </div>
         <!--/Credits-->
     </section>
-<!--/Single Comic Info -->
+    <!--/Single Comic Info -->
 @endsection

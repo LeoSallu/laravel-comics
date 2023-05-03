@@ -1,12 +1,12 @@
 <header>
     <!-- MENU TOP  -->
     <div id="menu-top">
-        <ul class="d-flex justify-content-end">
+        <ul class="d-flex justify-content-end container">
             <li>
                 <a href="#">DC POWER VISA</a>
             </li>
             <li class="me-3">
-                <a href="#">ADDITIONAL DC SITES</a>
+                <a href="#">ADDITIONAL DC SITES <span><i class="fa-solid fa-caret-down mx-1"></i></span></a>
             </li>
         </ul>
     </div>
